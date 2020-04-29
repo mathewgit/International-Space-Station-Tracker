@@ -1,3 +1,11 @@
+#https://janakiev.com/blog/gps-points-distance-python/
+#http://open-notify.org/Open-Notify-API/ISS-Pass-Times/
+# Youtube Reference https://www.youtube.com/watch?v=lal6eWVCEJs
+# Youtube Reference https://www.youtube.com/watch?v=IVBD_V42tXI&t=534s
+#http://api.open-notify.org/
+#https://www.ridgesolutions.ie/index.php/2013/11/14/algorithm-to-calculate-speed-from-two-gps-latitude-and-longitude-points-and-time-difference/
+
+
 # FINAL CODE FOR International Space Station(ISS) tracker
 import requests
 import pandas as pd
@@ -112,6 +120,12 @@ elif answer == 2:
         speed_kph=(speed_mps*3600.0)/1000.0     
         #print("ISS is travelling at " + str(round(speed_kph)) +" Kilometer / Hour")
         plt.title('INTERNATONAL SPACE STATION POSITION\n'+'SPEED ' +str(round(speed_kph)) +" kilometer/hour", fontsize=15)
+        
+        #speed_mps=(dist/3)
+        #speed_kps=(speed_mps)/1000
+        #speed_kph=(speed_mps*3600)/1000     
+        #print("ISS is travelling at " + str(round(speed_kps)) +" Kilometer / Second")
+        #plt.title('INTERNATONAL SPACE STATION POSITION\n'+'Speed ' +str(round(speed_kps)) +" Kilometer/Second", fontsize=15)
         
                
 else:
