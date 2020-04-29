@@ -6,7 +6,7 @@ from geopy.geocoders import Nominatim
 from  pytz import utc
 from datetime import datetime
 import os
-os.environ["PROJ_LIB"] = "C:\\Users\\Mathew.jacob\\AppData\\Local\\Continuum\\anaconda3\\Library\\share"
+os.environ["PROJ_LIB"] = "C:\\Continuum\\anaconda3\\Library\\share"
 from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
 import time
